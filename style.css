@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: antonio;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    height: 100vh;
+}
+
+#bg-video{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#nav-bar{
+    height: 80px;
+    display: flex;
+    padding: 5px;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.15);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+#img-logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+#logo-name{
+    color: white;
+    text-shadow: 0 0 4px black;
+}
+
+#quotes-box{
+    text-shadow: 0 0 4px black;
+}
+
+#first{
+    font-size: 5em;
+    color: white;
+}
+
+#second{
+    font-size: 3em;
+    color: rgb(198, 213, 237);
+}
+
+#btn{
+    padding: 15px;
+    font-size: 2em;
+    font-style: bold;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(39, 86, 162);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+}
+
+#btn:hover{
+    background-color: rgb(38, 73, 130);
+    transition: background-color 0.5s;
+}
+
+#btn:active{
+    background-color: rgb(71, 120, 199);
+}
