@@ -11,30 +11,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=BBH+Bartle&family=Playwrite+NZ+Guides&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <video autoplay muted loop id="bg-video">
-        <source src="videos/nature_bg_video.mp4" type="video/mp4">
-    </video>
-
-    <div>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-    </div>
-
     <div id="nav-bar">
         <img src="images/vannilai_logo.png" alt="logo" id="img-logo">
         <h1 id="logo-name">Vannilai</h1>
     </div>
     <div id="quotes-box">
-        <h1 id="first">Feel the <span style="color: rgb(39, 86, 162)">sky</span> before you step outside!!!</h1>
-        <h1 id="second">"<span  style="color: rgb(39, 86, 162)">Vaanilai</span> ungal kaiyil."</h1>
+        <h1 id="first">Feel the <span style="color: rgb(0, 110, 255)">sky</span> before you step outside!!!</h1>
+        <h1 id="second">"<span  style="color: rgb(0, 110, 255)">Vaanilai</span> ungal kaiyil."</h1>
     </div>
-    
+
     <div id="btn-div">
-        <button id="btn">Vannilai Paaru</button>
+        <button id="btn">Check Vannilai</button>
         <p style="color: hsla(0, 0%, 0%, 0.293);">click the button to check the weather</p>
     </div>
 
+    <div id="weather-container">
+        <div class="weather"><span class="emoji">☀️</span> <p>Sunny</p></div>
+        <div class="weather"><span class="emoji">🌧️</span> <p>Rainy</p></div>
+        <div class="weather"><span class="emoji">⛅</span> <p>Cloudy</p></div>
+        <div class="weather"><span class="emoji">❄️</span> <p>Snowy</p></div>
+    </div>
 
     <script src="script.js"></script>
 </body>

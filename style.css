@@ -10,16 +10,42 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 100px;
     height: 100vh;
+    gap: 30px;
+    background: linear-gradient(180deg, rgb(118, 163, 237),white);
+    background-repeat: no-repeat;    
 }
 
-#bg-video{
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    object-fit: cover;
-    z-index: -1;
+#weather-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 280px;
+}
+
+.weather{
+    min-height: 250px;
+    min-width: 250px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 20px;
+    color: white;
+}
+
+.weather:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: background-color 0.4s;
+    cursor: pointer;
+}
+
+.emoji{
+    font-size: 10em;
 }
 
 #nav-bar{
@@ -28,7 +54,7 @@ body{
     padding: 5px;
     justify-content:flex-start;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.305);
     position: fixed;
     width: 100%;
     top: 0px;
@@ -40,16 +66,18 @@ body{
     border-radius: 50px;
     margin-left: 50px;
     margin-right: 20px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #logo-name{
     color: white;
-    text-shadow: 0 0 4px black;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
 #quotes-box{
-    text-shadow: 0 0 4px black;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.50);
+    margin-top: 90px;
+    margin-left: 40px;
 }
 
 #first{
@@ -63,22 +91,126 @@ body{
 }
 
 #btn{
-    padding: 15px;
+    padding: 30px;
     font-size: 2em;
     font-style: bold;
     border: none;
-    border-radius: 25px;
-    background-color: rgb(39, 86, 162);
+    border-radius: 50px;
+    background-color: rgb(74, 144, 235);
     color: white;
     cursor: pointer;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
 }
 
 #btn:hover{
-    background-color: rgb(38, 73, 130);
+    background-color: rgb(68, 133, 218);
     transition: background-color 0.5s;
 }
 
 #btn:active{
-    background-color: rgb(71, 120, 199);
+    background-color: rgb(78, 151, 248);
+}
+
+@media (max-width: 1160px){
+
+#first{
+    font-size: 4.8em;
+}
+
+#second{
+    font-size: 2.8em;
+}   
+
+}
+
+@media (max-width: 1120px){
+
+#first{
+    font-size: 4.6em;
+}
+
+#second{
+    font-size: 2.6em;
+}   
+
+.weather{
+    min-height: 200px;
+    min-width: 200px;
+    margin: 15px;
+}
+
+.emoji{
+    font-size: 9em;
+}
+
+}
+
+@media (max-width: 900px){
+
+#first{
+    font-size: 4.4em;
+}
+
+#second{
+    font-size: 2.4em;
+}   
+
+#weather-container{
+    flex-direction: column;
+    padding-top: 450px;
+}
+
+#quotes-box{
+    margin-top: 330px;
+    margin-left: 0px;
+}
+
+.emoji{
+    font-size: 7em;
+}
+
+}
+
+@media (max-width: 600px){
+
+#first{
+    font-size: 4em;
+}
+
+#second{
+    font-size: 2em;
+}   
+
+#weather-container{
+    flex-direction: column;
+    padding-top: 450px;
+}
+
+.weather{
+    min-height: 200px;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.emoji{
+    font-size: 7em;
+}
+
+#quotes-box{
+    margin-top: 330px;
+    margin-left: 0px;
+}
+
+}
+
+@media (max-width: 400px){
+
+#first{
+    font-size: 3em;
+}
+
+#second{
+    font-size: 1.5em;
+}   
+
 }
