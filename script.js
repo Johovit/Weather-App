@@ -77,7 +77,3 @@ function displayError(error){
     msg.style.display="block";
     msg.textContent = error.message || error;
 }
-
-function openWeather(){
-    window.location.href = "weather.html";
-}
